@@ -1,0 +1,4 @@
+aidanW -- 2024-10-23 9:30
+Added repo structure, team flag, README header, and design document v0
+
+
