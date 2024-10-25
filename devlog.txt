@@ -1,4 +1,20 @@
-aidanW -- 2024-10-23 9:30
-Added repo structure, team flag, README header, and design document v0
+aidanW -- 2024-10-23 21:30
+* Added repo structure as detailed in p00 README.md
+* Uploaded team flag 
+* Created README and added header
+* Uploaded Design Document V0 (Unfinalized)
+
+aidanW -- 2024-10-24 20:40
+* Finalized Design Document V0
+    - Improved diagrams for clarity
+    - Fixed lettering mistakes
+* Updated README: 
+    - Improved Header 
+    - Added Roster with roles
+    - Added description of website
+    - Created section detailing how to install and run project
+    - Improved formatting of devlog.txt
+* Updated requirements.txt: Added Flask and Python (Including versions)
+* Added Header to __init__.py
 
 
