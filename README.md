@@ -10,61 +10,46 @@
 
 # Project Description:
 
-"Banana_Bytes" is a collaborative storytelling website where registered users can create stories and contribute to existing ones. Users can start a story by providing a title and adding content of any length on a "create" page. When contributing to a story on the "contribute" page, users can only see the most recent update by another user. After submitting their contribution, users are restricted from adding to that story again, but can now read the full story on a "view" page. Each user will have a personalized dashboard where they can view all the stories they have contributed to. In addition, there is a "collection" page where users can see all existing story titles, and filter based on contribution status, modification date, and more.
+"Banana_Bytes" is a collaborative storytelling website where registered users can create stories and contribute to existing ones. Users can start a story by providin   g a title and adding content of any length on a "create" page. When contributing to a story on the "contribute" page, users can only see the most recent update by another user. After submitting their contribution, users are restricted from adding to that story again, but can now read the full story on a "view" page. Each user will have a personalized dashboard where they can view all the stories they have contributed to. In addition, there is a "collection" page where users can see all existing story titles, and filter based on contribution status, modification date, and more.
 
-# Launch Codes:
+# Install Guide
 
-### Installation
+**Prerequisites**
 
-0. Install virtual machine:
-		
+Ensure that **Git** and **Python** are installed on you machine. For help, refer to the official documentation:
+   1. Installing Git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git 
+   2. Installing Python: https://www.python.org/downloads/ 
+   3. Setting up Git (Ms. Novillo's APCSA Guide): https://novillo-cs.github.io/apcsa/tools/
 
-**Cloning Method (Requires Terminal)**
-1. Clone the repository to your local machine: 
+**Cloning the Project**
+1. In terminal, clone the repository to your local machine: 
 
         $ git clone git@github.com:awong50/Jobless_Monkeys__aidanw26_abidurr6_brianl237_leonh15.git
 
 2. Navigate to project directory
 
-		$ cd PATH/TO/Jobless_Monkeys_aidanw26_abidurr6_brianl237_leonh15
+        $ cd PATH/TO/Jobless_Monkeys__aidanw26_abidurr6_brianl237_leonh15/
 		
 3. Install dependencies
 
-		$ pip install -r requirements.txt
+        $ pip install -r requirements.txt
 
 
-**Installation Method**
-1. On home page of this repo, click the green dropdown named "<> Code"
+# Launch Codes
 
-2. Click "Download ZIP"
+1. Navigate to project directory:
 
-### Running the App
-1. Activate python virtual machine:
-
-    Windows: 
-        
-        $ cd path/to/[env_name]
-        $ .\Scripts/activate
-
-    Linux:
-
-        $ . [env_name]/bin/activate
-
-    macOS: 
-
-        $ cd [env_name]/bin
-        $ source activate
-
-2. Navigate to app directory:
-
-        $ cd path/to/Jobless_Monkeys__aidanw26_abidurr6_brianl237_leonh15/app
+        $ cd ./PATH/TO/Jobless_Monkeys__aidanw26_abidurr6_brianl237_leonh15/
     
+2. Navigate to 'app' directory
+
+        $ cd ./app/
+
 3. Run App:
 
-        $ python3 __init__.py
+        $ python3 ./__init__.py
     
-4. Click link that appears in the terminal
+4. Click the link that appears in the terminal to be brought to the website
 
-        * Running on http://127.0.0.1:5000\
+        * Running on http://127.0.0.1:5000
 
-5. Enjoy!
