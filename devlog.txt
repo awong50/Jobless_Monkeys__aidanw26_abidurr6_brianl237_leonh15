@@ -17,4 +17,5 @@ aidanW -- 2024-10-24 20:40
 * Updated requirements.txt: Added Flask and Python (Including versions)
 * Added Header to __init__.py
 
-
+aidanW -- 2024-10-28 10:56
+* Class Discussion Session Update: Confirmed all upcoming deliverables were completed and reviewed things added on 2024-10-24
