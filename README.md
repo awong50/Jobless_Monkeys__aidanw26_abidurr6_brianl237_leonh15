@@ -16,12 +16,21 @@
 
 ### Installation
 
-0. Ensure all dependencies are installed (Found in requirements.txt)
+0. Install virtual machine:
+		
 
 **Cloning Method (Requires Terminal)**
 1. Clone the repository to your local machine: 
 
-        git clone git@github.com:awong50/Jobless_Monkeys__aidanw26_abidurr6_brianl237_leonh15.git
+        $ git clone git@github.com:awong50/Jobless_Monkeys__aidanw26_abidurr6_brianl237_leonh15.git
+
+2. Navigate to project directory
+
+		$ cd PATH/TO/Jobless_Monkeys_aidanw26_abidurr6_brianl237_leonh15
+		
+3. Install dependencies
+
+		$ pip install -r requirements.txt
 
 
 **Installation Method**
@@ -46,7 +55,7 @@
         $ cd [env_name]/bin
         $ source activate
 
-2. Navigate to project directory:
+2. Navigate to app directory:
 
         $ cd path/to/Jobless_Monkeys__aidanw26_abidurr6_brianl237_leonh15/app
     
