@@ -33,3 +33,11 @@ aidanW -- 2024-10-29 19:25
 
 brianL -- 2024-10-30 10:35
 * added installation directions for the virtual environment in the readme
+
+aidanW -- 2024-10-30 18:40
+* External README Review Summary: Lack of virtual enviornment setup/activation instructions, Typo in description, Lack of instruction to open website link once Flask is running and how to close it
+* Updated README:
+    - Improved instructions for virtual enviornment setup and installation
+    - Added recommended HTTP method to clone repository 
+    - Added instructions on how to interact with Flask console 
+    - Improved general formatting
