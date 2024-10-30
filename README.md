@@ -20,7 +20,7 @@ Ensure that **Git** and **Python** are installed on you machine. It is recommend
    1. Installing Git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git 
    2. Installing Python: https://www.python.org/downloads/ 
 
-   3. Optional: Setting up Git with SSH (Ms. Novillo's APCSA Guide): https://novillo-cs.github.io/apcsa/tools/ 
+   3. (Optional) Setting up Git with SSH (Ms. Novillo's APCSA Guide): https://novillo-cs.github.io/apcsa/tools/ 
          
 
 **Cloning the Project**
@@ -36,9 +36,11 @@ $ python3 -m PATH/TO/venv_name
    - Windows: `$ . .\PATH\TO\venv_name\Scripts\activate`
    - macOS: `$ source PATH/TO/venv_name/bin/activate`
 
-   If successful, command line will display name of virtual enviornment: `(venv_name) $ `
+   *Notes*
 
-   To close a virtual enviornment, simply type `$ deactivate` in the terminal
+   - If successful, command line will display name of virtual enviornment: `(venv_name) $ `
+
+   - To close a virtual enviornment, simply type `$ deactivate` in the terminal
 
 
 3. In terminal, clone the repository to your local machine: 
@@ -90,6 +92,7 @@ $ cd PATH/TO/Jobless_Monkeys__aidanw26_abidurr6_brianl237_leonh15/
     - You can visit the link via several methods:
         - Control + Clicking on the link
         - Typing/Pasting http://127.0.0.1:5000 in any browser
+    - To close the app, press control + C when in the terminal
 
 ```    
 * Running on http://127.0.0.1:5000
