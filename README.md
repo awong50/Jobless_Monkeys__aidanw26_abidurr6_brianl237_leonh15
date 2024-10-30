@@ -20,6 +20,10 @@ Ensure that **Git** and **Python** are installed on you machine. For help, refer
    1. Installing Git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git 
    2. Installing Python: https://www.python.org/downloads/ 
    3. Setting up Git (Ms. Novillo's APCSA Guide): https://novillo-cs.github.io/apcsa/tools/
+   4. Setting up virtual machine 
+           
+           $ python -m venv /PATH/TO/new/virtual/environment
+         
 
 **Cloning the Project**
 1. In terminal, clone the repository to your local machine: 
@@ -29,12 +33,27 @@ Ensure that **Git** and **Python** are installed on you machine. For help, refer
 2. Navigate to project directory
 
         $ cd PATH/TO/Jobless_Monkeys__aidanw26_abidurr6_brianl237_leonh15/
-		
+        
 3. Install dependencies
 
         $ pip install -r requirements.txt
 
+4. Activate virtual machine
 
+        $ cd the/path/you/made
+        
+On LINUX:
+
+        $ . bin/activate
+        
+On Windows:
+
+        $ . Scripts/activate
+        
+On MacOS:
+
+        $ source bin/activate
+        
 # Launch Codes
 
 1. Navigate to project directory:
@@ -49,7 +68,10 @@ Ensure that **Git** and **Python** are installed on you machine. For help, refer
 
         $ python3 ./__init__.py
     
-4. Click the link that appears in the terminal to be brought to the website
+4. Ctrl + click to open the link that appears in the terminal to be brought to the website (to close, ctrl + C in terminal)
 
         * Running on http://127.0.0.1:5000
+        
+5. After finishing, deactivate the virtual environment
 
+        <the/path/you/made> $ deactivate

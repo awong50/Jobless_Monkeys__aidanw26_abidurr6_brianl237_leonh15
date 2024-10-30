@@ -30,3 +30,6 @@ aidanW -- 2024-10-29 10:58
 aidanW -- 2024-10-29 19:25
 * Updated __init__.py to be functional app
 * Updated README with Launch Codes and Install Guide
+
+brianL -- 2024-10-30 10:35
+* added installation directions for the virtual environment in the readme
