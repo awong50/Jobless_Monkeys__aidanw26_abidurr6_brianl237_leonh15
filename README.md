@@ -10,68 +10,87 @@
 
 # Project Description:
 
-"Banana_Bytes" is a collaborative storytelling website where registered users can create stories and contribute to existing ones. Users can start a story by providin   g a title and adding content of any length on a "create" page. When contributing to a story on the "contribute" page, users can only see the most recent update by another user. After submitting their contribution, users are restricted from adding to that story again, but can now read the full story on a "view" page. Each user will have a personalized dashboard where they can view all the stories they have contributed to. In addition, there is a "collection" page where users can see all existing story titles, and filter based on contribution status, modification date, and more.
+"Banana_Bytes" is a collaborative storytelling website where registered users can create stories and contribute to existing ones. Users can start a story by providing a title and adding content of any length on a "create" page. When contributing to a story on the "contribute" page, users can only see the most recent update by another user. After submitting their contribution, users are restricted from adding to that story again, but can now read the full story on a "view" page. Each user will have a personalized dashboard where they can view all the stories they have contributed to. In addition, there is a "collection" page where users can see all existing story titles, and filter based on contribution status, modification date, and more.
 
 # Install Guide
 
 **Prerequisites**
 
-Ensure that **Git** and **Python** are installed on you machine. For help, refer to the official documentation:
+Ensure that **Git** and **Python** are installed on you machine. It is recommended that you use a virtual machine when running this project to avoid any possible conflicts. For help, refer to the following documentation:
    1. Installing Git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git 
    2. Installing Python: https://www.python.org/downloads/ 
-   3. Setting up Git (Ms. Novillo's APCSA Guide): https://novillo-cs.github.io/apcsa/tools/
-   4. Setting up virtual machine 
-           
-           $ python -m venv /PATH/TO/new/virtual/environment
+
+   3. Optional: Setting up Git with SSH (Ms. Novillo's APCSA Guide): https://novillo-cs.github.io/apcsa/tools/ 
          
 
 **Cloning the Project**
-1. In terminal, clone the repository to your local machine: 
+1. Create Python virtual enviornment:
 
-        $ git clone git@github.com:awong50/Jobless_Monkeys__aidanw26_abidurr6_brianl237_leonh15.git
+```
+$ python3 -m PATH/TO/venv_name
+```
 
-2. Navigate to project directory
+2. Activate virtual enviornment 
 
-        $ cd PATH/TO/Jobless_Monkeys__aidanw26_abidurr6_brianl237_leonh15/
-        
-3. Install dependencies
+   - Linux: `$ . PATH/TO/venv_name/bin/activate`
+   - Windows: `$ . .\PATH\TO\venv_name\Scripts\activate`
+   - macOS: `$ source PATH/TO/venv_name/bin/activate`
 
-        $ pip install -r requirements.txt
+   If successful, command line will display name of virtual enviornment: `(venv_name) $ `
 
-4. Activate virtual machine
+   To close a virtual enviornment, simply type `$ deactivate` in the terminal
 
-        $ cd the/path/you/made
-        
-On LINUX:
 
-        $ . bin/activate
-        
-On Windows:
+3. In terminal, clone the repository to your local machine: 
 
-        $ . Scripts/activate
-        
-On MacOS:
+HTTPS METHOD (Recommended)
 
-        $ source bin/activate
+```
+$ git clone https://github.com/awong50/Jobless_Monkeys__aidanw26_abidurr6_brianl237_leonh15.git        
+```
+
+SSH METHOD (Requires SSH Key to be set up):
+
+```
+$ git clone git@github.com:awong50/Jobless_Monkeys__aidanw26_abidurr6_brianl237_leonh15.git
+```
+
+4. Navigate to project directory
+
+```
+$ cd PATH/TO/Jobless_Monkeys__aidanw26_abidurr6_brianl237_leonh15/
+```
+
+5. Install dependencies
+
+```
+$ pip install -r requirements.txt
+```
         
 # Launch Codes
 
 1. Navigate to project directory:
 
-        $ cd ./PATH/TO/Jobless_Monkeys__aidanw26_abidurr6_brianl237_leonh15/
-    
+```
+$ cd PATH/TO/Jobless_Monkeys__aidanw26_abidurr6_brianl237_leonh15/
+```
+ 
 2. Navigate to 'app' directory
 
-        $ cd ./app/
+```
+ $ cd app/
+```
 
-3. Run App:
+3. Run App
 
-        $ python3 ./__init__.py
-    
-4. Ctrl + click to open the link that appears in the terminal to be brought to the website (to close, ctrl + C in terminal)
+```
+ $ python3 __init__.py
+```
+4. Open the link that appears in the terminal to be brought to the website
+    - You can visit the link via several methods:
+        - Control + Clicking on the link
+        - Typing/Pasting http://127.0.0.1:5000 in any browser
 
-        * Running on http://127.0.0.1:5000
-        
-5. After finishing, deactivate the virtual environment
-
-        <the/path/you/made> $ deactivate
+```    
+* Running on http://127.0.0.1:5000
+``` 
