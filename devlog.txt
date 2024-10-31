@@ -45,3 +45,9 @@ aidanW -- 2024-10-30 18:40
 leonH -- 2024-10-31 11:15
 * added template and static folders
     - added login and logout templates
+
+aidanW -- 2024-10-31 11:16
+* Group Meeting Update (in class): Worked on deliverables and assigned tasks for weekend
+* Updated README: Fixed Typo
+* Created templates folder + template for landing page
+* Updated __init__.py to use render template for "/" route
