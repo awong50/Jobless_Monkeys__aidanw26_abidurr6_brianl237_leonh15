@@ -6,12 +6,13 @@ P00: Move Slowly and Fix Things
 Time Spent: .05
 '''
 
-from flask import Flask
+from flask import Flask, render_template
+import os
 app = Flask(__name__)
 
 @app.route("/")
 def landing_page():
-    return "Account Creation Page goes here"
+    return render_template('landing.html')
 
 @app.route("/reg")
 def login_page():
