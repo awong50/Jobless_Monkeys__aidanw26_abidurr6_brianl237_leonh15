@@ -41,3 +41,7 @@ aidanW -- 2024-10-30 18:40
     - Added recommended HTTP method to clone repository 
     - Added instructions on how to interact with Flask console 
     - Improved general formatting
+
+leonH -- 2024-10-31 11:15
+* added template and static folders
+    - added login and logout templates
