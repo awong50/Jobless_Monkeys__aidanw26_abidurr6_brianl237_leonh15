@@ -51,3 +51,6 @@ aidanW -- 2024-10-31 11:16
 * Updated README: Fixed Typo
 * Created templates folder + template for landing page
 * Updated __init__.py to use render template for "/" route
+brianL -- 2024-11-02 19:47
+* created db folder 
+    - created a file that contains all databases needed for project
