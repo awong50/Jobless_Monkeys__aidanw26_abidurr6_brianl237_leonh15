@@ -59,3 +59,9 @@ brianL -- 2024-11-02 19:47
 leonH -- 2024-11-04 10:56
 * changed login to separate signup and login templates
 * added templates for: 'dashboard', 'create', 'view', 'collection', and 'contribute' pages
+
+aidanW -- 2024-11-04 11:00
+* Group Meeting Update: Decided work for next time and agreed on new website structure
+* Updated register template to have confirm password field 
+* Updated landing page to have links to register and login page 
+* Updated __init__.py to use render template
