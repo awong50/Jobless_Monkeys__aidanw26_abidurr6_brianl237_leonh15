@@ -6,7 +6,7 @@ P00: Move Slowly and Fix Things
 Time Spent: .05
 '''
 
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 import os
 app = Flask(__name__)
 
@@ -14,9 +14,13 @@ app = Flask(__name__)
 def landing_page():
     return render_template('landing.html')
 
-@app.route("/reg")
+@app.route("/login")
 def login_page():
-    return "Login/Registration goes here"
+    return render_template('login.html')
+
+@app.route("/register")
+def register_page():
+    return render_template('register.html')
 
 @app.route("/dashboard")
 def dashboard_page():
