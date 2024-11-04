@@ -55,3 +55,7 @@ aidanW -- 2024-10-31 11:16
 brianL -- 2024-11-02 19:47
 * created db folder 
     - created a file that contains all databases needed for project
+
+leonH -- 2024-11-04 10:56
+* changed login to separate signup and login templates
+* added templates for: 'dashboard', 'create', 'view', 'collection', and 'contribute' pages
