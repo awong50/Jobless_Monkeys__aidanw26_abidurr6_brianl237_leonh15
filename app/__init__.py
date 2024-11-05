@@ -15,8 +15,6 @@ app = Flask(__name__)
 
 app.secret_key = os.urandom(32)
 
-users = {"Aidan": "123"}
-
 # dbFunctions.initDB()
 
 @app.route("/", methods=['GET', 'POST'])
