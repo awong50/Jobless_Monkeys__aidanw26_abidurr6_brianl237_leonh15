@@ -6,6 +6,27 @@
     <title>Collection</title>
 </head>
 <body>
-    <h1>This is the collection page. Pick a story to view!</h1>
+    <h1>COLLECTION</h1>
+    <form method="POST">
+        <input type="hidden" name="form_type" value="toDashboard">
+        <input type="submit" value="Return to Dashboard">
+    </form>
+    {% if stories %}
+        <ul>
+          {% for story in stories %}
+            <li>
+              <h3>{{story[0]}}</h3>
+              <p>Version: {{story[1]}}</p>
+              <p>Last Author: {{story[2]}}</p>
+            </li>
+            <form method="POST">
+              <input type="hidden" name="form_type" value="{{'view' ~ story[3]}}">
+              <input type="submit" value="View">
+            </form>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p>Collection is empty!</p>
+      {% endif %}
 </body>
 </html>

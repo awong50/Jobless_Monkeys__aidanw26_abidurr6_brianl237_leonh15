@@ -6,6 +6,37 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <h1>This is the dashboard. Navigate to collection, create, contribute, or view</h1>
+    <h3>Hello {{username}}! This is the temporary dashboard.</h3>
+    <form method="POST">
+        <input type="hidden" name="form_type" value="create">
+        <input type="submit" value="Create Story">
+      </form>
+      <form method="POST">
+        <input type="hidden" name="form_type" value="toCollection">
+        <input type="submit" value="View Story Collection">
+      </form>
+    <form method="POST">
+        <input type="hidden" name="form_type" value="log_out">
+        <input type="submit" value="Log out">
+      </form>
+
+      <!--User Contributed Stories go here-->
+      {% if stories %}
+        <ul>
+          {% for story in stories %}
+            <li>
+              <h3>{{story[0]}}</h3>
+              <p>Version: {{story[1]}}</p>
+              <p>Last Author: {{story[2]}}</p>
+            </li>
+            <form method="POST">
+              <input type="hidden" name="form_type" value="{{'view' ~ story[3]}}">
+              <input type="submit" value="View">
+            </form>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p>You hanve't contributed to any stories yet!</p>
+      {% endif %}
 </body>
 </html>
