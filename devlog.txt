@@ -2,10 +2,10 @@ aidanW -- 2024-10-23 21:30
 * Added repo structure as detailed in p00 README.md
 * Uploaded team flag 
 * Created README and added header
-* Uploaded Design Document V0 (Unfinalized)
+* Uploaded Design Document V0 
 
 aidanW -- 2024-10-24 20:40
-* Finalized Design Document V0
+* Finalized Design Document V1
     - Improved diagrams for clarity
     - Fixed lettering mistakes
 * Updated README: 
@@ -65,3 +65,11 @@ aidanW -- 2024-11-04 11:00
 * Updated register template to have confirm password field 
 * Updated landing page to have links to register and login page 
 * Updated __init__.py to use render template
+
+aidanW -- 2024-11-05 12:21
+* Updated design document to V2
+    - Updated site map: Split up Login and Registration pages
+    - Updated database tables: 
+        - Author Table: Removed
+        - Story Collection Table: Changed entire story content value to most recently added content
+        - Story Table: Now stores edits across all stories (each version, the text content and author of the version)
