@@ -24,13 +24,13 @@ Ensure that **Git** and **Python** are installed on your machine. It is recommen
          
 
 **Cloning the Project**
-1. Create Python virtual enviornment:
+1. Create Python virtual environment:
 
 ```
 $ python3 -m PATH/TO/venv_name
 ```
 
-2. Activate virtual enviornment 
+2. Activate virtual environment 
 
    - Linux: `$ . PATH/TO/venv_name/bin/activate`
    - Windows: `$ . .\PATH\TO\venv_name\Scripts\activate`
@@ -38,9 +38,9 @@ $ python3 -m PATH/TO/venv_name
 
    *Notes*
 
-   - If successful, command line will display name of virtual enviornment: `(venv_name) $ `
+   - If successful, command line will display name of virtual environment: `(venv_name) $ `
 
-   - To close a virtual enviornment, simply type `$ deactivate` in the terminal
+   - To close a virtual environment, simply type `$ deactivate` in the terminal
 
 
 3. In terminal, clone the repository to your local machine: 
