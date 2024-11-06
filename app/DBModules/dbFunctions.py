@@ -81,7 +81,7 @@ def createStory(title, contentR, authorL):
 
     new_id = 1 if latest_id is None else latest_id + 1
 
-    c.execute("INSERT INTO collection (id, title, contentR, versionC, authorL) VALUES (?, ?, ?, ?, ?)", (new_id, title, contentR, 0, authorL))
+    c.execute("INSERT INTO collection (id, titles, contentR, versionC, authorL) VALUES (?, ?, ?, ?, ?)", (new_id, title, contentR, 0, authorL))
     db.commit()
     db.close()
 
