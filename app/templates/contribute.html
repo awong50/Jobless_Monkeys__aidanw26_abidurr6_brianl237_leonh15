@@ -7,5 +7,28 @@
 </head>
 <body>
     <h1>This is the contributing page. Add something new to a story!</h1>
+
+    <!--Displaying the latest version-->
+
+    <h3>{{title}}</h3>
+    <p>Last Author: {{lastAuthor}}</p>
+    <p>Latest Addition: </p>
+    <p>{{ latestContent }}</p>
+
+    <!--For Contributing-->
+    <form method="POST">
+        <textarea id="story" name="story" rows="4" cols="50" placeholder="Write your story addition here..."></textarea> <br>
+        <input type="hidden" name="form_type" value="contribute"> <br>
+        <input type="submit" value="Enter"> 
+      </form>
+    <br>
+    <form method="POST">
+        <input type="hidden" name="form_type" value="toDashboard">
+        <input type="submit" value="Return to Dashboard">
+    </form>
+    <form method="POST">
+        <input type="hidden" name="form_type" value="log_out">
+        <input type="submit" value="Log out">
+    </form>
 </body>
 </html>

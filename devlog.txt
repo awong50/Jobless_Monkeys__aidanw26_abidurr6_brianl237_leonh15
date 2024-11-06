@@ -92,3 +92,7 @@ abidurR -- 2024-11-06 10:54
 leonH -- 2024-11-06 11:00
 * Added description paragraph to landing page
 * Simple styling on landing page
+
+aidanW -- 2024-11-06 18:30
+* Uploaded contribution functionality (template and python code)
+* Altered table creation functions to only work if they have not been created already

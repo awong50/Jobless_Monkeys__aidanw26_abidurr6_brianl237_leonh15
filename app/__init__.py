@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 app.secret_key = os.urandom(32)
 
-# dbFunctions.initDB()
+dbFunctions.initDB()
 
 @app.route("/", methods=['GET', 'POST'])
 def landing_page():
@@ -135,7 +135,27 @@ def collection_page():
 @app.route("/contribute/<story_id>", methods=['GET', 'POST'])
 def contribute_page(story_id):
     if 'username' in session:
-        return "Story Contribution goes here for " + story_id
+
+        form_type = request.form.get('form_type')
+        title = dbFunctions.displayStoryTitle(story_id)
+        lastAuthor = dbFunctions.displayLastVersion(story_id)[1]
+        latestContent = dbFunctions.displayLastVersion(story_id)[0]
+
+        if form_type == 'log_out':
+            session.pop('username')
+            return redirect(url_for('landing_page'))
+        
+        if form_type == 'contribute':
+            content = request.form.get('story')
+            author = session['username']
+            dbFunctions.contributeStory(story_id, content, author)
+            return redirect(url_for('dashboard_page'))
+        
+        if form_type == 'toDashboard':
+            return redirect(url_for('dashboard_page'))
+        
+        return render_template('contribute.html', title=title, lastAuthor=lastAuthor, latestContent=latestContent)
+    
     return redirect(url_for('landing_page'))
 
 if __name__ == "__main__":
