@@ -82,6 +82,6 @@ aidanW -- 2024-11-05 17:00
 * Renamed sqldb folder to DBModules and created functions to interact with database for user actions (creating accounts, stories, etc)
 * Updated __init__.py for webpage logic (contribute page is unfinished)
 
-brianL -- 2024-11-02 19:47
+brianL -- 2024-11-06 10:37
 * deleted pycache file
 
