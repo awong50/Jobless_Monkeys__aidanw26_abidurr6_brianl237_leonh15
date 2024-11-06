@@ -85,3 +85,7 @@ aidanW -- 2024-11-05 17:00
 brianL -- 2024-11-06 10:37
 * deleted pycache file
 
+abidurR --2024-11-06 10:54
+* Updated readME file
+* Handled OperationalError where registering an account invokes no such table: users
+
