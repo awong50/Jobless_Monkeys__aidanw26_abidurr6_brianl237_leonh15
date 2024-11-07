@@ -1,6 +1,8 @@
 import sqlite3   #enable control of an sqlite database     
 
-DB_FILE="discobandit.db"
+DB_FILE="TheJungle.db"
+
+############################# Build Database #############################
 
 def initDB():
     db = sqlite3.connect(DB_FILE) # Open/Create database file
@@ -36,6 +38,7 @@ def initDB():
     db.close()  #close database
 
 ############################# User Database Interations #############################
+
 def addUser(username, password):
     db = sqlite3.connect(DB_FILE)
     c = db.cursor()
@@ -109,7 +112,7 @@ def contributeStory(story_id, addition, author):
 
     addVersion(story_id, new_version, addition, author)
 
-############################# Display Functions #############################
+############################# Data for Display Functions #############################
 
 # Dashboard function - Displays list of stories that user has contributed to
 def contributionList(username):
@@ -130,7 +133,7 @@ def contributionList(username):
     # print(titles)
     return titles 
 
-# Function that returns list of versions of a specific story
+# Function that returns list of versions (content and author) of a specific story
 def displayStory(id):
     db = sqlite3.connect(DB_FILE)
     c = db.cursor()
@@ -152,7 +155,7 @@ def displayStoryTitle(id):
 
     db.close()
 
-    return title[0]
+    return title[0] # [0] to deal with tuples
 
 # Function that checks if a user has contributed to a story (to determine their view status)
 def checkContributionStatus(username, story_id):
@@ -165,7 +168,7 @@ def checkContributionStatus(username, story_id):
 
     db.close()
 
-    return ids is not None
+    return ids is not None # True or False to determine if the user has contributed (Any items in the list)
 
 # Function for the collections page - Grab information to display
 def displayCollection():
