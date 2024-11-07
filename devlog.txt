@@ -112,3 +112,8 @@ aidanW -- 2024-11-06 20:00
 
 leonH -- 2024-11-06 21:27
 * Corrected virtual environment activation code for Windows in README
+
+leonH -- 2024-11-06 22:40
+* Added css for every template
+* Added custom monkey images
+* Formatted template HTML 
