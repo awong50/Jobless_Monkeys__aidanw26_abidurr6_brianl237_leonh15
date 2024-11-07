@@ -104,6 +104,7 @@ def contributeStory(story_id, addition, author):
 
     c.execute("UPDATE collection SET contentR=?, versionC=? WHERE id=?", (addition, new_version, story_id))
 
+    db.commit()
     db.close()
 
     addVersion(story_id, new_version, addition, author)
@@ -197,7 +198,7 @@ def displayLastVersion(id):
         db.close()
         return []
     
-    print(stories[0])
+    # print(stories[0])
     
     return stories[0]
 
