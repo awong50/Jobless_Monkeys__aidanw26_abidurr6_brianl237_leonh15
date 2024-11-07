@@ -6,7 +6,7 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <h3>Hello {{username}}! This is the Dashboard.</h3>
+    <h1>Hello {{username}}! This is the Dashboard.</h1>
     <form method="POST">
         <input type="hidden" name="form_type" value="create">
         <input type="submit" value="Create Story">
@@ -27,7 +27,7 @@
             <li>
               <h3>{{story[0]}}</h3>
               <p>Version: {{story[1]}}</p>
-              <p>Last Author: {{story[2]}}</p>
+              <p>Original Author: {{story[2]}}</p>
             </li>
             <form method="POST">
               <input type="hidden" name="form_type" value="{{'view' ~ story[3]}}">
@@ -36,7 +36,7 @@
           {% endfor %}
         </ul>
       {% else %}
-        <p>You hanve't contributed to any stories yet!</p>
+        <p>You haven't contributed to any stories yet!</p>
       {% endif %}
 </body>
 </html>

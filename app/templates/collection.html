@@ -6,10 +6,14 @@
     <title>Collection</title>
 </head>
 <body>
-    <h1>COLLECTION</h1>
+    <h1>Story Collection</h1>
     <form method="POST">
         <input type="hidden" name="form_type" value="toDashboard">
         <input type="submit" value="Return to Dashboard">
+    </form>
+    <form method="POST">
+      <input type="hidden" name="form_type" value="log_out">
+      <input type="submit" value="Log out">
     </form>
     {% if stories %}
         <ul>
@@ -17,7 +21,7 @@
             <li>
               <h3>{{story[0]}}</h3>
               <p>Version: {{story[1]}}</p>
-              <p>Last Author: {{story[2]}}</p>
+              <p>Original Author: {{story[2]}}</p>
             </li>
             <form method="POST">
               <input type="hidden" name="form_type" value="{{'view' ~ story[3]}}">

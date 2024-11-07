@@ -15,6 +15,10 @@
         <input type="hidden" name="form_type" value="toCollection">
         <input type="submit" value="Return to Collection">
     </form>
+    <form method="POST">
+        <input type="hidden" name="form_type" value="log_out">
+        <input type="submit" value="Log out">
+      </form>
     {% if story %}
         {% if currentContributer %}
             {% for content in story %}
