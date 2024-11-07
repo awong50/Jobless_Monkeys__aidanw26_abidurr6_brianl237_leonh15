@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Page</title>
+    <link rel="stylesheet" href="../static/css/create.css">
 </head>
-<body>
-    <h1>This is the story creator page. Write to your heart's desire!</h1>
+    <body>
+        <h1>This is the story creator page. Write to your heart's desire!</h1>
 
-    <form method="POST">
-        <input type="text" placeholder="Title" name="title"> <br> <br>
-        <textarea id="story" name="story" rows="4" cols="50" placeholder="Write your story here..."></textarea> <br>
-        <input type="hidden" name="form_type" value="create"> <br>
-        <input type="submit" value="Enter"> 
-      </form>
-    <br>
-    <form method="POST">
-        <input type="hidden" name="form_type" value="toDashboard">
-        <input type="submit" value="Return to Dashboard">
-    </form>
-    <form method="POST">
-        <input type="hidden" name="form_type" value="log_out">
-        <input type="submit" value="Log out">
-    </form>
-
-</body>
+        <form method="POST">
+            <input type="text" placeholder="Title" name="title"> <br> <br>
+            <textarea id="story" name="story" rows="4" cols="50" placeholder="Write your story here..."></textarea> <br>
+            <input type="hidden" name="form_type" value="create"> <br>
+            <input type="submit" value="Enter"> 
+        </form>
+        <br>
+        <form method="POST">
+            <input type="hidden" name="form_type" value="toDashboard">
+            <input type="submit" value="Return to Dashboard">
+        </form>
+        <br>
+        <form method="POST">
+            <input type="hidden" name="form_type" value="log_out">
+            <input type="submit" value="Log out">
+        </form>
+        <center><img src="../static/writem.png" alt="monkey"></center>
+    </body>
 </html>

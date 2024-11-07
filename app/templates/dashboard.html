@@ -4,39 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="../static/css/dashboard.css">
 </head>
-<body>
-    <h1>Hello {{username}}! This is the Dashboard.</h1>
-    <form method="POST">
-        <input type="hidden" name="form_type" value="create">
-        <input type="submit" value="Create Story">
-      </form>
+  <body>
+      <h1>Hello, {{username}}! This is the Dashboard.</h1>
       <form method="POST">
-        <input type="hidden" name="form_type" value="toCollection">
-        <input type="submit" value="View Story Collection">
-      </form>
-    <form method="POST">
-        <input type="hidden" name="form_type" value="log_out">
-        <input type="submit" value="Log out">
-      </form>
+          <input type="hidden" name="form_type" value="create">
+          <input type="submit" value="Create Story">
+        </form>
+        <br>
+        <form method="POST">
+          <input type="hidden" name="form_type" value="toCollection">
+          <input type="submit" value="View Story Collection">
+        </form>
+        <br>
+      <form method="POST">
+          <input type="hidden" name="form_type" value="log_out">
+          <input type="submit" value="Log out">
+        </form>
 
-      <!--User Contributed Stories go here-->
-      {% if stories %}
-        <ul>
-          {% for story in stories %}
-            <li>
-              <h3>{{story[0]}}</h3>
-              <p>Version: {{story[1]}}</p>
-              <p>Original Author: {{story[2]}}</p>
-            </li>
-            <form method="POST">
-              <input type="hidden" name="form_type" value="{{'view' ~ story[3]}}">
-              <input type="submit" value="View">
-            </form>
-          {% endfor %}
-        </ul>
-      {% else %}
-        <p>You haven't contributed to any stories yet!</p>
-      {% endif %}
-</body>
+        <!--User Contributed Stories go here-->
+        {% if stories %}
+          <ul>
+            {% for story in stories %}
+              <li>
+                <h3>{{story[0]}}</h3>
+                <p>Version: {{story[1]}}</p>
+                <p>Original Author: {{story[2]}}</p>
+              </li>
+              <form method="POST">
+                <input type="hidden" name="form_type" value="{{'view' ~ story[3]}}">
+                <input type="submit" value="View">
+              </form>
+            {% endfor %}
+          </ul>
+        {% else %}
+          </color><b><p>You haven't contributed to any stories yet!</p></b>
+        {% endif %}
+
+        <center><img src="../static/dashm.png" alt="monkey"></center>
+  </body>
 </html>

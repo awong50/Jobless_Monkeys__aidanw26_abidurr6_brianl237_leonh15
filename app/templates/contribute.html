@@ -4,31 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contribute Page</title>
+    <link rel="stylesheet" href="../static/css/contribute.css">
 </head>
-<body>
-    <h1>This is the contributing page. Add something new to a story!</h1>
+    <body>
+        <h1>This is the contributing page. Add something new to a story!</h1>
 
-    <!--Displaying the latest version-->
+        <!--Displaying the latest version-->
 
-    <h3>{{title}}</h3>
-    <p>Last Author: {{lastAuthor}}</p>
-    <p>Latest Addition: </p>
-    <p>{{ latestContent }}</p>
+        <h3>{{title}}</h3>
+        <b><p>Last Author: </b>{{lastAuthor}}</p>
+        <b><p>Latest Addition: </b> </p>
+        <i><p>{{ latestContent }}</p></i>
 
-    <!--For Contributing-->
-    <form method="POST">
-        <textarea id="story" name="story" rows="4" cols="50" placeholder="Write your story addition here..."></textarea> <br>
-        <input type="hidden" name="form_type" value="contribute"> <br>
-        <input type="submit" value="Enter"> 
-      </form>
-    <br>
-    <form method="POST">
-        <input type="hidden" name="form_type" value="toDashboard">
-        <input type="submit" value="Return to Dashboard">
-    </form>
-    <form method="POST">
-        <input type="hidden" name="form_type" value="log_out">
-        <input type="submit" value="Log out">
-    </form>
-</body>
+        <!--For Contributing-->
+        <form method="POST">
+            <textarea id="story" name="story" rows="4" cols="50" placeholder="Write your story addition here..."></textarea> <br>
+            <input type="hidden" name="form_type" value="contribute"> <br>
+            <input type="submit" value="Enter"> 
+        </form>
+        <br>
+        <form method="POST">
+            <input type="hidden" name="form_type" value="toDashboard">
+            <input type="submit" value="Return to Dashboard">
+        </form>
+        <br>
+        <form method="POST">
+            <input type="hidden" name="form_type" value="log_out">
+            <input type="submit" value="Log out">
+        </form>
+        <center><img src="../static/makem.png" alt="monkey"></center>
+    </body>
 </html>
