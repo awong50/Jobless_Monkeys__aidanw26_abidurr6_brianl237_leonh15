@@ -100,3 +100,12 @@ aidanW -- 2024-11-06 18:30
 aidanW -- 2024-11-06 19:32
 * Updated dashboard header (no more temporary)
 * Updated code for contribution -- Fixed version not updating (missing db.commit())
+
+aidanW -- 2024-11-06 20:00
+* Updated design document to V4
+    - Updated Jinja Templating session to reflect project
+    - Updated document formatting
+    - Changed target ship date to demo day
+* Updated templates as specified on design document for logout buttons
+* Updated dashboard and collection pages to accurately say "Original Author" instead of "Last Author"
+* Updated __init.py__ to support logging out for every page
